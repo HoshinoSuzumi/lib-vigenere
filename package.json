@@ -1,9 +1,14 @@
 {
-  "name": "@uniiem/typescript-lib-template",
+  "name": "@uniiem/vigenere-cipher",
   "type": "module",
   "version": "0.0.0",
-  "description": "TypeScript Library Template",
-  "keywords": [],
+  "description": "Vigenère cipher implementation in TypeScript",
+  "keywords": [
+    "vigenere-cipher",
+    "classic-cipher",
+    "encryption",
+    "decryption"
+  ],
   "author": "HoshinoSuzumi <master@uniiem.com>",
   "license": "MIT",
   "main": "dist/index.umd.cjs",

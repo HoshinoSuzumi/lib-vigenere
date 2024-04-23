@@ -1,12 +1,33 @@
-# @typescript-lib-template
+# @uniiem/vigenere-cipher
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/HoshinoSuzumi/[repo]/ci.yml)
-![NPM Downloads](https://img.shields.io/npm/dm/%40[org]%2F[repo])
-![NPM Version (with dist tag)](https://img.shields.io/npm/v/%40[org]%2F[repo]/latest)
-![npm bundle size](https://img.shields.io/bundlephobia/min/%40[org]%2F[repo])
-![GitHub License](https://img.shields.io/github/license/HoshinoSuzumi/[repo])
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/HoshinoSuzumi/lib-vigenere/ci.yml)
+![NPM Downloads](https://img.shields.io/npm/dm/%40uniiem%2Fvigenere-cipher)
+![NPM Version (with dist tag)](https://img.shields.io/npm/v/%40uniiem%2Fvigenere-cipher/latest)
+![npm bundle size](https://img.shields.io/bundlephobia/min/%40uniiem%2Fvigenere-cipher)
+![GitHub License](https://img.shields.io/github/license/HoshinoSuzumi/lib-vigenere)
 
-TypeScript Lib Starter Template
+Vigenère cipher implementation in TypeScript
+
+## Installation
+
+```bash
+npm install @uniiem/vigenere-cipher
+```
+
+## Usage
+
+```typescript
+import { enctypt, decrypt } from '@uniiem/vigenere-cipher';
+
+const key = 'OFCPGD';
+const plaintext = 'CTFEVER @ VIGENERE CIPHER TEST';
+
+const ciphertext = enctypt(plaintext, key);
+console.log(ciphertext); // 'QYHTBHF @ AKVKQSWG ROSVJT IKVH'
+
+const decrypted = decrypt(ciphertext, key);
+console.log(decrypted); // 'CTFEVER @ VIGENERE CIPHER TEST'
+```
 
 ## Sponsor
 
