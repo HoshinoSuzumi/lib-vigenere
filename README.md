@@ -17,12 +17,12 @@ npm install @uniiem/vigenere-cipher
 ## Usage
 
 ```typescript
-import { enctypt, decrypt } from '@uniiem/vigenere-cipher';
+import { encrypt, decrypt } from '@uniiem/vigenere-cipher';
 
 const key = 'OFCPGD';
 const plaintext = 'CTFEVER @ VIGENERE CIPHER TEST';
 
-const ciphertext = enctypt(plaintext, key);
+const ciphertext = encrypt(plaintext, key);
 console.log(ciphertext); // 'QYHTBHF @ AKVKQSWG ROSVJT IKVH'
 
 const decrypted = decrypt(ciphertext, key);
